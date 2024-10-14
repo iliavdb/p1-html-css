@@ -1,129 +1,139 @@
-{
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  }
-  html {
-    font-size: 62.5%;
-  }
-  body {
-    font-family: "Goldman", cursive;
-    background-image: url(img/Illiya\ is\ homo.png);
-  }
-  
-  nav {
-    display: flex;
-    width: 100%;
-    padding: 2rem;
-    min-height: 10vh;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-    background: #00a8c7;
-    justify-content: space-between;
-  }
-  nav ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-  }
-  nav li {
-    font-size: 2.5rem;
-    padding: 0 4rem 0 4rem;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  nav img {
-    width: 5vw;
-  }
-  .I-1{
-    font-size: 47px;
-    color: white;
-  }
-  .contactYellow{
-    background-color: yellow;
-
-
-
-    /* General Page Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Goldman', sans-serif; /* Applying Goldman font */
 }
 
-/* Navigation Bar */
+/* Root Font Size */
+html {
+  font-size: 62.5%;
+}
+
+/* Body Styles */
+body {
+  font-family: "Goldman", cursive;
+  background-image: url('img/Illiya is homo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 60px; /* Account for navbar height */
+}
+
+/* Navbar Styles */
 nav {
-  background-color: #333; /* Dark background for the navbar */
-  color: white;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
   align-items: center;
-  padding: 10px 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
   position: fixed;
-  width: 100%; /* Make the nav take the full width */
   top: 0;
+  z-index: 10;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  list-style-type: none;
 }
 
-nav ul li {
-  margin-left: 20px;
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem;
+  position: relative;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 nav img {
-  height: 50px; /* Adjust height of logo */
+  width: 5vw;
 }
 
-/* Background Image */
-body {
-  background-image: url('./img/hacker.png'); /* Set hacker image as background */
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  height: 100vh; /* Full height of the screen */
-  margin-top: 60px; /* Account for navbar height */
+/* Jaar 2 Hover and Dropdown Menu */
+nav ul li .jaar2 {
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li .jaar2:hover {
+  color: blue;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+nav ul li .jaar2-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positioned below "jaar 2" */
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  z-index: 5;
+}
+
+nav ul li:hover .jaar2-dropdown {
+  display: block;
+}
+
+nav ul li .jaar2-dropdown li {
+  padding: 1rem;
+}
+
+nav ul li .jaar2-dropdown li:hover {
+  background-color: #E9E9E9; /* Light grey background on hover */
+}
+
+nav ul li .jaar2-dropdown li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.8rem;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; /* Ensure all titles are bold */
-  color: #fff; /* White font color for better visibility */
+  font-weight: bold;
+  color: #fff;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
-  margin-top: 100px; /* To adjust space after navbar */
+  margin-top: 100px; /* Adjust spacing after navbar */
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-  background-color: #333; /* Same color as the navigation bar */
+  background-color: #333;
   color: white;
   text-align: center;
   padding: 15px;
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 60px; /* Set footer height */
+  height: 60px;
 }
 
-  }
-  
-    
-  
-  .
+/* Contact Yellow Section */
+.contactYellow {
+  background-color: yellow;
+}
+
+/* I-1 Class */
+.I-1 {
+  font-size: 47px;
+  color: white;
+}
