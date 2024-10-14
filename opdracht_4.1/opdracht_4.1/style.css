@@ -1,4 +1,5 @@
 h1{
+   
     font-size: 24px;
     color: blue;
     font-weight: 900;
@@ -27,4 +28,58 @@ h2{
 a{
     color: #8a2be2;
     text-decoration: none;
+
+
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    width: 100vw; /* Full width of the viewport */
+    height: 33vh; /* 1/3 of the viewport height */
+    background-image: url('https://your-image-url.com'); /* Replace with your chosen background image URL */
+    background-size: cover; /* Ensures the image covers the full area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Default text color */
+    text-align: center;
+}
+
+/* Adjust the h1 and p in the header */
+header h1 {
+    color: #f5f5f5; /* Change this color to improve readability */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow to make text more legible */
+}
+
+header p {
+    color: #e0e0e0; /* Lighter color for better readability */
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Image Styles */
+article img {
+    width: 50vw; /* Image takes half of the screen width */
+    border-radius: 15px; /* Optional rounded corners for a smoother look */
+}
+
+/* Article Styles */
+article {
+    margin: 20px 0;
+    padding: 15px;
+    border: 3px solid; /* General border */
+    border-color: #3498db; /* Border color */
+    border-left-width: 8px; /* Thicker border on the left side */
+    border-radius
+
 }
