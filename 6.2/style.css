@@ -1,0 +1,54 @@
+/* Basis styling voor de container */
+.container {
+    display: flex; /* Flexbox toepassen */
+    justify-content: space-around; /* Spatie tussen de boxen */
+    align-items: center; /* Zorgt dat ze verticaal gecentreerd staan */
+    max-width: 1200px; /* Maximale breedte van de container */
+    
+}
+
+/* Styling voor de vierkanten */
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center; /* Tekst in het midden centreren (horizontaal) */
+    align-items: center; /* Tekst in het midden centreren (verticaal) */
+    font-size: 24px; /* Grotere tekst voor de nummering */
+    font-weight: bold;
+    border: 2px solid black; /* Om de boxen visueel te maken */
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Tekst in het midden centreren (horizontaal) */
+    align-items: center; /* Tekst in het midden centreren (verticaal) */
+    font-size: 24px; /* Grotere tekst voor de nummering */
+    font-weight: bold;
+    border: 2px solid black; /* Om de boxen visueel te maken */
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center; /* Tekst in het midden centreren (horizontaal) */
+    align-items: center; /* Tekst in het midden centreren (verticaal) */
+    font-size: 24px; /* Grotere tekst voor de nummering */
+    font-weight: bold;
+    border: 2px solid black; /* Om de boxen visueel te maken */
+}
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    justify-content: center; /* Tekst in het midden centreren (horizontaal) */
+    align-items: center; /* Tekst in het midden centreren (verticaal) */
+    font-size: 24px; /* Grotere tekst voor de nummering */
+    font-weight: bold;
+    border: 2px solid black; /* Om de boxen visueel te maken */
+}
