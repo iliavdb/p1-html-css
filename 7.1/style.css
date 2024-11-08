@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333; /* Desktop color */
+    padding: 1em;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Hover color for links */
+    border-radius: 5px;
+}
+
+/* Mobile-only element */
+.mobile-element {
+    width: 20px;
+    height: 20px;
+    background-color: red; /* Default color for mobile element */
+    display: none; /* Hidden on desktop */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Media Queries */
+
+/* Tablet styles (e.g., 768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #444; /* Change navbar background for tablet */
+    }
+
+    .navbar a {
+        font-size: 14px;
+        color: #ffdd57; /* Change link color on tablet */
+    }
+
+    /* Optional: Change hover color on tablet */
+    .navbar a:hover {
+        background-color: #666;
+    }
+}
+
+/* Mobile styles (e.g., 480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        background-color: #555; /* Change navbar background for mobile */
+    }
+
+    .navbar a {
+        color: #4CAF50; /* Change link color on mobile */
+    }
+
+    /* Optional: Change hover color on mobile */
+    .navbar a:hover {
+        background-color: #333;
+    }
+
+    /* Mobile-specific element styling */
+    .mobile-element {
+        display: block; /* Make visible on mobile */
+        margin-top: 10px;
+        background-color: #ff5722; /* Change color for mobile */
+    }
+}
